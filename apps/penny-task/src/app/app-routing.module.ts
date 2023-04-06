@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuardService } from './core/guards/auth-guard.service';
@@ -5,6 +6,14 @@ import { AuthGuardService } from './core/guards/auth-guard.service';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
 
+=======
+import { AuthGuardService } from './core/guards/auth-guard.service';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'signup' },
+>>>>>>> 78b73cd72e673d69073298527298eb75612ac1cf
   {
     path: 'login',
     loadChildren: () =>
